@@ -16,7 +16,7 @@ function App() {
 
   const onClickHandler = (value) => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?zip=${value},us&appid=${process.env.REACT_APP_API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?zip=${value},us&appid=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => {
         if (response.ok) {
