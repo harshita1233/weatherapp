@@ -10,6 +10,7 @@ export default function DisplayCharts() {
 
   useEffect(() => {
     getSevenDaysData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getSevenDaysData = () => {
