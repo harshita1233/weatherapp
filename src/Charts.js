@@ -1,8 +1,5 @@
 import React from "react";
-import chartGlobals from "./chartGlobals";
-import ReactHighcharts from "react-highcharts";
-import merge from "deepmerge";
-import MqAreaChart from "./MqAreaChart";
+
 import MqLineChart from "./MqLineChart";
 export default class Charts extends React.Component {
   constructor() {
@@ -86,7 +83,7 @@ export default class Charts extends React.Component {
         {/* <MqLineChart
 					
 				/> */}
-        <MqAreaChart
+        <MqLineChart
           config={{
             series: this.state.AreaChartData,
           }}

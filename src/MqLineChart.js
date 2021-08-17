@@ -3,7 +3,7 @@ import ReactHighcharts from "react-highcharts";
 import merge from "deepmerge";
 import chartGlobals from "./chartGlobals";
 
-class MqAreaChart extends React.Component {
+class MqLineChart extends React.Component {
   render() {
     const { config } = this.props;
     const defaultConfig = {
@@ -89,4 +89,4 @@ class MqAreaChart extends React.Component {
   }
 }
 
-export default MqAreaChart;
+export default MqLineChart;

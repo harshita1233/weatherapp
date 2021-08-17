@@ -1,18 +1,15 @@
 import React from "react";
 import { Input } from "antd";
 
-const { Search } = Input;
-
-export default function InputBox({ onSearch, onChange, placeholder }) {
+export default function SimpleInput({ onChange, placeholder, defaultValue }) {
   return (
     <div>
-      <Search
+      <Input
         style={{ width: 280 }}
         enterButton="Search"
-        size="large"
+        size="small"
         bordered
-        defaultValue="10001"
-        onSearch={(value) => onSearch(value)}
+        defaultValue={defaultValue}
         onChange={onChange}
         placeholder={placeholder}
       />

@@ -44,8 +44,8 @@ function App() {
   };
   return (
     <div className="App main">
-      <h2>Please Search the weather using Zip Code</h2>
-      <InputBox onSearch={onSearch} />
+      <h2>Please Search the weather using Zip Code in USA</h2>
+      <InputBox onSearch={onSearch} placeholder="Search with Zip Code" />
       Show more conditions
       <Switch checked={moreInfo} onChange={onChange} />
       <br />
